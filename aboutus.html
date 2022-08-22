@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>about us</title>
+    <!-- Bootst trap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custome css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #062263!important;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/header_logo.png" alt="brand-logo" class="img-fluid ">
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+            <div>
+                <!-- class="collapse navbar-collapse" id="navbarSupportedContent" -->
+                <div class="ms-auto" role="search">
+                    <ul class="mb-0 d-flex align-items-center">
+
+                        <li class="me-4 nav-item dropdown">
+                            <a class="nav-link  " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="assets/img/notification_icon.png" alt="notification" class="img-fluid"
+                                    width="25">
+                            </a>
+                            <ul class="dropdown-menu   rounded p-2  " aria-labelledby="navbarDropdown">
+                                <li class="border-bottom py-1  d-flex justify-content-start align-item-center  ">
+                                   <a href="">
+                                    <span class="noti-box d-inline-block me-2 rounded "></span>
+                                    <span class="fs-8 ">
+                                        <div>Dr
+                                            <div>
+                                                11
+                                            </div>
+                                    </span>
+                                   </a>
+                                </li>
+                                <li class="border-bottom py-1  d-flex justify-content-start align-item-center pointer">
+                                    <a href="">
+                                        <span class="noti-box d-inline-block me-2 rounded "></span>
+                                        <span class="fs-8 ">
+                                            <div>Dr
+                                                <div>
+                                                    11
+                                                </div>
+                                        </span>
+                                       </a>
+                                </li>
+
+                                <li class="border-bottom py-1  d-flex justify-content-start align-item-center pointer">
+                                    <a href="">
+                                        <span class="noti-box d-inline-block me-2 rounded "></span>
+                                        <span class="fs-8 ">
+                                            <div>Dr
+                                                <div>
+                                                    11
+                                                </div>
+                                        </span>
+                                       </a>
+                                </li>
+
+                                <li class="border-bottom py-1  d-flex justify-content-start align-item-center pointer">
+                                    <a href="">
+                                        <span class="noti-box d-inline-block me-2 rounded "></span>
+                                        <span class="fs-8 ">
+                                            <div>Dr
+                                                <div>
+                                                    11
+                                                </div>
+                                        </span>
+                                       </a>
+                                </li>
+
+                                <li class="border-bottom py-1  d-flex justify-content-start align-item-center pointer">
+                                    <a href="">
+                                        <span class="noti-box d-inline-block me-2 rounded ">
+                                            <img src="assets/img/pro.png" alt="">
+                                        </span>
+                                        <span class="fs-8 ">
+                                            <div>Dr
+                                                <div>
+                                                    11
+                                                </div>
+                                        </span>
+                                       </a>
+                                </li>
+
+                                <li class="border-bottom py-1  d-flex justify-content-start align-item-center pointer">
+                                    <a href="">
+                                        <span class="noti-box d-inline-block me-2 rounded ">
+                                            <img src="assets/img/profile.jpg" alt="">
+                                        </span>
+                                        <span class="fs-8 ">
+                                            <div>Dr
+                                                <div>
+                                                    11
+                                                </div>
+                                        </span>
+                                       </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <button type="button" class="btn text-white px-3 rounded-0  border-0" data-bs-toggle="modal"
+                                data-bs-target="#logout">
+                                <img src="assets/img/logout_icon.png" alt="Logout" class="img-fluid" width="25">
+                            </button> 
+                        </li>
+                        <li>
+                            <button type="button" class="btn text-white px-3 d-md-none" id="sdc" >
+                                <i class="fa-solid fa-bars text-white"></i>
+                            </button>
+                        </li>   
+                    </ul>
+                </div>
+                <!-- Log out Modal -->
+                <div class="modal fade" id="logout" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered w-25  cus-modal">
+                        <div class="modal-content pt-4 border border-light rounded-3 fs-8"
+                            style="height: 175px!important;">
+                            <div class="modal-body text-center ">
+                                <h6 class="text-dark fw-bold">Alert</h6>
+                                <p class="text-muted ">Are you Sure you want to logout?</p>
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <button type="button" class="btn  mx-1 rounded w-25 shadow-lg   border-0 text-dark"
+                                        data-bs-dismiss="modal" style="background-color: #f3f3f3;">YES</button>
+                                    <button type="button" class="btn btn-primary mx-1 rounded w-25"
+                                        data-bs-dismiss="modal">No</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Log out Modal End-->
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 col-lg-3 mb-4 mb-md-0">
+                    <div class=" left-siderbar bg-white shadow-sm ">
+                        <div class="text-center mb-3 p-3">
+                            <div class="profile-img mx-auto mb-3">
+                                <img src="assets/img/profile.jpg" alt="profile-img"
+                                    class="img-fluid ob-fit-cover rounded-circle">
+
+                            </div>
+                            <div class="title">
+                                <h6 class="fw-bold">Kundan Kumar</h6>
+                            </div>
+                        </div>
+
+                        <div class="admin-link">
+                            <ul class="p-0 m-0">
+                                <li class=" ">
+                                    <a href="index.html"
+                                        class="text-decoration-none side-menu p-3 d-flex align-items-center border-bottom "
+                                        id="index">
+                                        <img src="assets/img/dashboard_inactive.png" alt=""
+                                            class="img-fluid ob-fit-cover me-3">
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="vid-menagement.html"
+                                        class="text-decoration-none p-3 side-menu  d-block border-bottom"
+                                        id="vid-menagement">
+                                        <img src="assets/img/videomanagement_inactive.png" alt=""
+                                            class="img-fluid ob-fit-cover me-3">
+                                        <span>Video Management</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="series-management.html"
+                                        class="text-decoration-none p-3 side-menu  d-block border-bottom"
+                                        id="series-management">
+                                        <img src="assets/img/seriesmanagement_inactive.png" alt=""
+                                            class="img-fluid ob-fit-cover me-3">
+                                        <span>Series Management</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile-Edit.html"
+                                        class="text-decoration-none p-3 side-menu  d-block border-bottom"
+                                        id="profile-Edit">
+                                        <img src="assets/img/myprofile_inactive.png" alt=""
+                                            class="img-fluid ob-fit-cover me-3">
+                                        <span>My Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="accordion  " id="settingAccordian">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header p-3 d-block border-bottom kdk" id="headingTwo">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="true"
+                                                    aria-controls="collapseTwo">
+                                                    <img src="assets/img/videomanagement_inactive.png" alt=""
+                                                        class="img-fluid ob-fit-cover me-3">
+                                                    <span>Setting</span>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse  "
+                                                aria-labelledby="headingTwo" data-bs-parent="#settingAccordian">
+                                                <div class="accordion-body">
+                                                    <ul class="p-0 m-0">
+                                                        <li class=" py-1">
+                                                            <a href="aboutus.html"
+                                                                class="text-decoration-none d-flex justify-content-between align-items-center fs-6">
+                                                                About Us
+                                                                <img src="assets/img/right_arrow_gray.png" alt=""
+                                                                    class="img-fluid ob-fit-cover ">
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="py-1 ">
+                                                            <a href="faq.html"
+                                                                class="text-decoration-none d-flex justify-content-between align-items-center fs-6">
+                                                                FaQ's
+                                                                <img src="assets/img/right_arrow_gray.png" alt=""
+                                                                    class="img-fluid ob-fit-cover ">
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="py-1">
+                                                            <a href="change-Password.html"
+                                                                class="text-decoration-none d-flex justify-content-between align-items-center fs-6">
+                                                                Change Password
+                                                                <img src="assets/img/right_arrow_gray.png" alt=""
+                                                                    class="img-fluid ob-fit-cover ">
+                                                            </a>
+                                                        </li>
+                                                        <li class="py-1">
+                                                            <a href="term&condition.html"
+                                                                class="text-decoration-none d-flex justify-content-between align-items-center fs-6">
+                                                                Terms & Conditions
+                                                                <img src="assets/img/right_arrow_gray.png" alt=""
+                                                                    class="img-fluid ob-fit-cover ">
+                                                            </a>
+                                                        </li>
+                                                        <li class="py-1">
+                                                            <a href="privacy & Policy.html"
+                                                                class="text-decoration-none d-flex justify-content-between align-items-center fs-6">
+                                                                Privacy Policy
+                                                                <img src="assets/img/right_arrow_gray.png" alt=""
+                                                                    class="img-fluid ob-fit-cover ">
+                                                            </a>
+                                                        </li>
+                                                        <li class="py-1">
+                                                            <a href="copyright-info.html"
+                                                                class="text-decoration-none d-flex justify-content-between align-items-center fs-6">
+                                                                Copyright Info
+                                                                <img src="assets/img/right_arrow_gray.png" alt=""
+                                                                    class="img-fluid ob-fit-cover ">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right section  -->
+                <div class="col-12 col-md-9 col-lg-9 ">
+                    <div class="d-flex justify-content-between mb-2">
+                        <h6 class="fw-bold t-color">About Us</h6> 
+                    </div>
+                    <div class="row shadow-sm bg-white p-3 rounded overflow-auto" style="height:500px!important;">
+                        <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                        <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                        <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        
+                    </div>
+                     
+                </div>
+
+            </div>
+        </div>
+    </section>
+     <!-- footer -->
+     <footer class="bg-dark">
+        <p class="mb-0 text-white text-center py-2">&copy 2022 Copyrights Bile Media</p>
+    </footer>
+    <!-- ===============================================Body Bottom and js links=================================================================== -->
+    <!-- jaquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+    <!-- Google Chart.js -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <!-- <script>
+        function getImage(imagename)
+    {
+        $('#display-image').html(imagename);
+    }
+    function getThumb(imgename)
+    {
+        $('#thumb-image').html(imgename);
+    }
+    </script> -->
+</body>
+
+</html>
